@@ -9,7 +9,6 @@ export default function RootLayout({ children }) {
           fontFamily:
             "-apple-system, BlinkMacSystemFont, 'Inter', sans-serif",
           WebkitFontSmoothing: "antialiased",
-          MozOsxFontSmoothing: "grayscale",
         }}
       >
         {children}
