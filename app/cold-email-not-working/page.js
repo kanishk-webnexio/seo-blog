@@ -1,23 +1,20 @@
-export default function Home() {
+export default function Page() {
   return (
     <main style={{ padding: "40px", fontFamily: "Arial", maxWidth: "800px", margin: "auto" }}>
       
-      <h1>WEBNEXIO Blog</h1>
-      <p>Outbound systems, cold email, and lead generation.</p>
+      <h1>Cold Email Not Getting Replies? Fix This</h1>
 
-      <h2 style={{ marginTop: "40px" }}>Latest Articles</h2>
+      <p>If your cold emails are getting ignored, it’s not random.</p>
 
+      <h2>Why this happens</h2>
       <ul>
-        <li>
-          <a href="/cold-email-not-working">Cold Email Not Getting Replies? Fix This</a>
-        </li>
-        <li>
-          <a href="/cold-email-going-to-spam">Cold Email Going to Spam? Fix This</a>
-        </li>
-        <li>
-          <a href="/best-cold-email-examples">Best Cold Email Examples</a>
-        </li>
+        <li>No personalization</li>
+        <li>Weak offer</li>
+        <li>Bad targeting</li>
       </ul>
+
+      <h2>How to fix it</h2>
+      <p>Focus on relevance, clarity, and strong value.</p>
 
     </main>
   );
