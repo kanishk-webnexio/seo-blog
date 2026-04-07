@@ -1,73 +1,135 @@
 export default function Home() {
   return (
-    <main style={{
-      maxWidth: "900px",
-      margin: "80px auto",
-      padding: "20px"
-    }}>
+    <main style={container}>
 
       {/* Header */}
-      <h1 style={{
-        fontSize: "42px",
-        fontWeight: "600",
-        letterSpacing: "-1px"
-      }}>
-        WEBNEXIO
-      </h1>
-
-      <p style={{
-        color: "#888",
-        marginTop: "10px"
-      }}>
-        A minimalist blog on outbound systems, cold email, and lead generation.
-      </p>
+      <div>
+        <h1 style={heading}>WEBNEXIO</h1>
+        <p style={subheading}>
+          Minimalist insights on outbound systems, cold email, and lead generation.
+        </p>
+      </div>
 
       {/* Divider */}
-      <div style={{
-        height: "1px",
-        background: "#222",
-        margin: "40px 0"
-      }} />
+      <div style={divider} />
 
       {/* Articles */}
-      <div style={{
-        display: "grid",
-        gap: "20px"
-      }}>
+      <div style={grid}>
 
-        <a href="/cold-email-not-working" style={cardStyle}>
-          <h2 style={titleStyle}>
+        <a
+          href="/cold-email-not-working"
+          style={card}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = "#3a3a3a";
+            e.currentTarget.style.transform = "translateY(-3px)";
+            e.currentTarget.style.background = "#111";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = "#1f1f1f";
+            e.currentTarget.style.transform = "translateY(0px)";
+            e.currentTarget.style.background = "transparent";
+          }}
+        >
+          <h2 style={cardTitle}>
             Cold Email Not Getting Replies?
           </h2>
-          <p style={descStyle}>
-            Why your emails fail and how to fix them.
+          <p style={cardDesc}>
+            Diagnose why your outreach fails and how to fix it with precision.
           </p>
         </a>
 
+      </div>
+
+      {/* CTA */}
+      <div style={ctaBox}>
+        <p style={ctaText}>
+          Want a system that consistently books qualified calls?
+        </p>
+        <a href="#" style={ctaButton}>
+          Book a strategy call
+        </a>
       </div>
 
     </main>
   );
 }
 
-const cardStyle = {
+const container = {
+  maxWidth: "880px",
+  margin: "100px auto",
+  padding: "20px"
+};
+
+const heading = {
+  fontSize: "44px",
+  fontWeight: "600",
+  letterSpacing: "-1.2px"
+};
+
+const subheading = {
+  color: "#777",
+  marginTop: "12px",
+  fontSize: "15px",
+  lineHeight: "1.6"
+};
+
+const divider = {
+  height: "1px",
+  background: "#1a1a1a",
+  margin: "50px 0"
+};
+
+const grid = {
+  display: "grid",
+  gap: "18px"
+};
+
+const card = {
   display: "block",
-  padding: "20px",
-  border: "1px solid #222",
-  borderRadius: "12px",
+  padding: "22px",
+  border: "1px solid #1f1f1f",
+  borderRadius: "14px",
   textDecoration: "none",
   color: "inherit",
-  transition: "all 0.2s ease"
+  transition: "all 0.25s ease",
+  cursor: "pointer"
 };
 
-const titleStyle = {
+const cardTitle = {
   margin: 0,
   fontSize: "20px",
-  fontWeight: "500"
+  fontWeight: "500",
+  letterSpacing: "-0.3px"
 };
 
-const descStyle = {
-  marginTop: "8px",
+const cardDesc = {
+  marginTop: "10px",
   color: "#888",
+  fontSize: "14px",
+  lineHeight: "1.5"
+};
+
+const ctaBox = {
+  marginTop: "70px",
+  padding: "30px",
+  border: "1px solid #1f1f1f",
+  borderRadius: "14px",
+  textAlign: "center"
+};
+
+const ctaText = {
+  color: "#aaa",
+  marginBottom: "15px",
   fontSize: "14px"
+};
+
+const ctaButton = {
+  display: "inline-block",
+  padding: "10px 18px",
+  border: "1px solid #333",
+  borderRadius: "999px",
+  textDecoration: "none",
+  color: "#fff",
+  fontSize: "14px",
+  transition: "all 0.2s ease"
 };
