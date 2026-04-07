@@ -1,20 +1,47 @@
 export default function Page() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial", maxWidth: "800px", margin: "auto" }}>
-      
-      <h1>Cold Email Not Getting Replies? Fix This</h1>
+    <main style={{
+      maxWidth: "700px",
+      margin: "80px auto",
+      padding: "20px"
+    }}>
 
-      <p>If your cold emails are getting ignored, it’s not random.</p>
+      <h1 style={{
+        fontSize: "36px",
+        fontWeight: "600",
+        letterSpacing: "-0.5px"
+      }}>
+        Cold Email Not Getting Replies?
+      </h1>
+
+      <p style={{
+        color: "#888",
+        marginTop: "10px"
+      }}>
+        A direct breakdown of why your outreach is failing.
+      </p>
+
+      <div style={{
+        height: "1px",
+        background: "#222",
+        margin: "30px 0"
+      }} />
+
+      <p>
+        Most cold emails fail because they are irrelevant, generic, and weak.
+      </p>
 
       <h2>Why this happens</h2>
       <ul>
         <li>No personalization</li>
         <li>Weak offer</li>
-        <li>Bad targeting</li>
+        <li>Wrong targeting</li>
       </ul>
 
-      <h2>How to fix it</h2>
-      <p>Focus on relevance, clarity, and strong value.</p>
+      <h2>Fix</h2>
+      <p>
+        Focus on clarity, relevance, and a strong outcome-driven message.
+      </p>
 
     </main>
   );
