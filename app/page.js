@@ -26,7 +26,12 @@ export default function Home() {
         <p style={ctaText}>
           Want a system that consistently books qualified calls?
         </p>
-        <a href="#" style={ctaButton}>
+        <a 
+  href="https://calendar.app.google/9S8TV4tqYCqzgyWR9" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  style={ctaButton}
+>
           Book a strategy call
         </a>
       </div>
